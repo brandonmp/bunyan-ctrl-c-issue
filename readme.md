@@ -1,6 +1,6 @@
 I'm using at node 7.1/npm 4.2/ubuntu 16.10. not sure what this requires
 
-issue only occurs when piping output to the CLI
+Issue only occurs when piping output to the CLI, as in `node index.js | bunyan`
 
 ```
 git clone https://github.com/brandonmp/bunyan-ctrl-c-issue/blob/master/index.js
