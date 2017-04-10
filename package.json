@@ -1,0 +1,26 @@
+{
+  "name": "@wayhome/bunyan-ctrl-c-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonmp/bunyan-ctrl-c-issue.git"
+  },
+  "author": "brandon <brandon@wayhome.io> (http://www.wayhome.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonmp/bunyan-ctrl-c-issue/issues"
+  },
+  "homepage": "https://github.com/brandonmp/bunyan-ctrl-c-issue#readme",
+  "dependencies": {
+    "async-throttle": "^1.1.0",
+    "bunyan": "1.8.9",
+    "bunyan-logsene": "^0.0.3",
+    "lodash": "^4.17.4",
+    "micro": "^7.3.0"
+  }
+}
