@@ -19,7 +19,7 @@
   "homepage": "https://github.com/brandonmp/bunyan-ctrl-c-issue#readme",
   "dependencies": {
     "async-throttle": "^1.1.0",
-    "bunyan": "1.8.9",
+    "bunyan": "^1.8.10",
     "lodash": "^4.17.4"
   }
 }

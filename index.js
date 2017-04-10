@@ -6,7 +6,7 @@ const MAX_WORKERS = 5;
 let IS_KILLSWITCH_ACTIVE = false;
 let NUM_WORKERS_SHUTDOWN = 0;
 
-const SHOULD_IGNORE_EPIPE = true;
+const SHOULD_IGNORE_EPIPE = false;
 
 const log = bunyan.createLogger({
   name: 'issue-demo',
