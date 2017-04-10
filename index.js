@@ -1,28 +1,24 @@
 const asyncThrottle = require('async-throttle');
 const bunyan = require('bunyan');
-const micro = require('micro');
 const _ = require('lodash');
-
-// run basic server so now keeps this alive
-const server = micro(() => new Promise(resolve => resolve('Welcome to micro')));
-
-server.listen(3000);
 
 const MAX_WORKERS = 5;
 let IS_KILLSWITCH_ACTIVE = false;
 let NUM_WORKERS_SHUTDOWN = 0;
 
-const SHOULD_IGNORE_EPIPE = false;
+const SHOULD_IGNORE_EPIPE = true;
 
 const log = bunyan.createLogger({
   name: 'issue-demo',
   serializers: {
     err: bunyan.stdSerializers.err,
   },
-  streams: {
-    stream: process.stdout,
-    level: 'info',
-  },
+  streams: [
+    {
+      stream: process.stdout,
+      level: 'info',
+    },
+  ],
 });
 
 const ignoreEpipe = () => {

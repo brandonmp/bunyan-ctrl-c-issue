@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js | bunyan"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,6 @@
   "dependencies": {
     "async-throttle": "^1.1.0",
     "bunyan": "1.8.9",
-    "bunyan-logsene": "^0.0.3",
-    "lodash": "^4.17.4",
-    "micro": "^7.3.0"
+    "lodash": "^4.17.4"
   }
 }
